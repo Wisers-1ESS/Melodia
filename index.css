@@ -126,4 +126,14 @@ main #sobre {
   min-height: 10rem;
 }
 
+footer{
+  background-color: #b5179e;
+  height: 90px;
+}
+
+.div_footer{
+  color: white;
+  padding-left: 500px;
+  padding-top: 30px;
+}
 /*# sourceMappingURL=index.css.map */
