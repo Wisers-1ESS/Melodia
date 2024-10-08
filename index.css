@@ -121,18 +121,18 @@ main #home img {
   }
 }
 main #sobre {
-  background-color: #3a0ca3;
+  background-color: #8b5bfc;
   width: 100%;
   min-height: 10rem;
 }
 
 footer{
-  background-color: #b5179e;
-  height: 90px;
+  background-color: #3a0ca3;
+  height: 150px;
   display: flex ;
-  padding-top: 20px;
   justify-content: center;
   align-items: center;
+
 }
 
 
