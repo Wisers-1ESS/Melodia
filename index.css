@@ -125,5 +125,70 @@ main #sobre {
   width: 100%;
   min-height: 10rem;
 }
+main #sobre .cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+main #sobre .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main #sobre .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+main #sobre .card p {
+  font-size: 1rem;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s, max-height 0.3s;
+  overflow: hidden;
+}
+main #sobre .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+main #sobre .card:hover p {
+  opacity: 1;
+  max-height: 100px;
+}
+main #sobre .card:nth-child(1) {
+  background-color: #F72585;
+}
+main #sobre .card:nth-child(2) {
+  background-color: #B5179E;
+}
+main #sobre .card:nth-child(3) {
+  background-color: #560BAD;
+}
+main #sobre .card:nth-child(4) {
+  background-color: #3F37C9;
+}
+main #sobre .card:nth-child(5) {
+  background-color: #4361EE;
+}
+main #sobre .card:nth-child(6) {
+  background-color: #4CC9F0;
+}
+@media (max-width: 768px) {
+  main #sobre .cards-section {
+    grid-template-columns: 1fr;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
