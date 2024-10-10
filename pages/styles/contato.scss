@@ -1,44 +1,99 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
 $accent-color: #f72585;
 $secondary-color: #b5179e;
 $primary-color: #7209b7;
 $background-color: #3a0ca3;
 $text-color: #333;
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: $background-color;
-    border-radius: 10px;
-  }
 }
 
-header {
-  display: flex;
-  position: sticky;
-  top: 0;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
+::-webkit-scrollbar {
+    width: 10px;
+}
 
-  .logo {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    font-size: larger;
-    font-weight: bold;
-  }
-    img {
-      max-width: 2.5rem;
-      margin-top: -4px;
-      margin-right: 0.5rem;
+::-webkit-scrollbar-thumb {
+    background-color: $background-color;
+    border-radius: 10px;
+}
+
+body {
+    background-color: $background-color;
+    line-height: 1.6;
+    font-size: 16px;
+    
+}
+
+h1, h2, h3 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $primary-color;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: $text-color;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-title {
+    color: $accent-color;
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial h3 {
+    font-size: 1.5rem;
+    color: $primary-color;
+    margin-top: 1rem;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    color: $text-color;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .testimonial h3 {
+        font-size: 1.25rem;
+    }
+
+    .testimonial p {
+        font-size: 0.9rem;
     }
 }
