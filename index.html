@@ -20,36 +20,38 @@
           <li><a href="#sobre">Nosso App</a></li>
           <li><a href="#funcionalidade">Funcionalidades</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="/pages/contato.html">Contato</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
     <main>
-        <section id="home">
-            <div>
-                <h1>Melodia: Sua Música, Sua Forma</h1>
-                <p>
-                O Melodia é um aplicativo de streaming de música que permite ouvir
-                suas músicas favoritas em qualquer lugar e a qualquer hora.
-                </p>
-                <a href="#funcionalidades">Ouvir Agora</a>
-            </div>
-            <img src="images/listen.png" alt="Imagem de um celular com o aplicativo Melodia aberto" />
-        </section>
-        
-
-        <section id="sobre">
-           <h1>O Melodia é tudo isso e muito mais!</h1>
-           <h2> feito para você</h2>
-          <section class="cards-section">
-            <div class="card">
-              <h3>100% Gratuito</h3>
-              <p>O Melodia é um aplicativo de streaming de música totalmente gratuito. Desfrute de acesso ilimitado a uma vasta biblioteca de músicas sem custo!</p>
-            </div>
-            <div class="card">
-              <h3>Vasta Biblioteca de Músicas</h3>
-              <p>Explore uma coleção diversificada de faixas e gêneros. Encontre seus artistas favoritos e descubra novas sonoridades a qualquer hora.</p>
-            </div>
+      <section id="home">
+        <div>
+          <h1>Melodia: Sua Música, Sua Forma</h1>
+          <p>
+            O Melodia é um aplicativo de streaming de música que permite ouvir
+            suas músicas favoritas em qualquer lugar e a qualquer hora.
+            <audio src="./musicas/Book Bag - E's Jammy Jams.mp3" autoplay></audio>
+            <!--Para adicionar os controles do player, coloque a tag controls antes de autoplay e depois das aspas-->
+          </p>
+          <a href="#funcionalidades">Ouvir Agora</a>
+        </div>
+        <img src="images/listen.png" alt="Imagem de um celular com o aplicativo Melodia aberto" />
+      </section>
+      
+      
+      <section id="sobre">
+        <h1>O Melodia é tudo isso e muito mais!</h1>
+        <h2> feito para você</h2>
+        <section class="cards-section">
+          <div class="card">
+            <h3>100% Gratuito</h3>
+            <p>O Melodia é um aplicativo de streaming de música totalmente gratuito. Desfrute de acesso ilimitado a uma vasta biblioteca de músicas sem custo!</p>
+          </div>
+          <div class="card">
+            <h3>Vasta Biblioteca de Músicas</h3>
+            <p>Explore uma coleção diversificada de faixas e gêneros. Encontre seus artistas favoritos e descubra novas sonoridades a qualquer hora.</p>
+          </div>
             <div class="card">
               <h3>Playlists Personalizadas</h3>
               <p>Crie playlists sob medida para cada momento. Deixe o Melodia entender seu gosto musical e surpreenda-se com sugestões personalizadas.</p>
@@ -69,8 +71,97 @@
           </section>
 
         </section>
-            
-        
+        <section class="testimonial-section text-center" id="depoimentos">
+          <h2 class="section-title mb-4">O que nossos usuários estão dizendo</h2>
+  
+          <div class="row">
+              <div class="col-md-4 mb-4">
+                  <div class="testimonial p-4">
+                      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Souza" class="rounded-circle" width="100">
+                      <h3>Ana Souza, 23 anos</h3>
+                      <p>"Eu amo como o Melodia sempre me apresenta novos artistas incríveis! Minhas playlists estão sempre renovadas e com a melhor qualidade de som que já ouvi."</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-4 mb-4">
+                  <div class="testimonial p-4">
+                      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João Pedro" class="rounded-circle" width="100">
+                      <h3>João Pedro, 27 anos</h3>
+                      <p>"Nunca foi tão fácil descobrir músicas novas! O Melodia é super intuitivo e me ajuda a criar playlists que refletem exatamente o meu gosto."</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-4 mb-4">
+                  <div class="testimonial p-4">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Clara" class="rounded-circle" width="100">
+                      <h3>Maria Clara, 25 anos</h3>
+                      <p>"O design do app é limpo e fácil de usar. Além disso, a qualidade do som faz toda a diferença quando estou ouvindo minhas músicas preferidas."</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+        <section>
+          <h1 style="color: rgb(146, 14, 199); font-size: 42px">Fale Conosco!</h1>
+          <hr class="line" />
+    
+          <div class="centro">
+            <div class="texto">
+            <h2 class="entre">Entre em contato conosco via:</h2>
+    
+            <p class="subtitulo">
+              <b class="bold">Email:</b>
+              contato@melodia.com
+    
+              <b class="bold">Telefone:</b>
+              (+55) 11 9999-9999
+    
+              <b class="bold">Endereço:</b>
+              Rua Humberto I, 37 - Vila Mariana, Sao Paulo - SP, 04.018-030 SAO PAULO, SP
+            </p>
+            </div>
+    
+            <div class="container" id="contato">
+              <section class="header">
+                <h2>Enviar Email</h2>
+              </section>
+          
+              <form id="form" class="form">
+                <div class="form-content">
+                  <label for="username">Nome</label>
+                  <input
+                    type="text"
+                    id="username"
+                    placeholder="Digite o seu nome..."
+                  />
+                  <a>Aqui vai a mensagem de erro....</a>
+                </div>
+          
+                <div class="form-content">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite o seu email..."
+                  />
+                  <a>Aqui vai a mensagem de erro....</a>
+                </div>
+          
+                <div class="form-content">
+                  <label for="msgtxt">Mensagem</label>
+                  <input
+                    type="text"
+                    id="msgtxt"
+                    placeholder="Digite sua Mensagem..."
+                  />
+                  <a>Aqui vai a mensagem de erro....</a>
+                </div>
+          
+          
+                <button type="submit">Enviar</button>
+          
+              </form>
+          
+            </div>
     </main>
     <footer>
       <div class="div_footer">
