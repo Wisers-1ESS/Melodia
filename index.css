@@ -422,11 +422,10 @@ footer {
 }
 
 .depoimentos {
-  margin-bottom: 40px;
+  margin: 40px 0;
   text-align: center;
 }
 .depoimentos h2 {
-  color: #fff;
   font-size: 35px;
   font-style: bold;
   padding: 0px 100px 0px 50px;
