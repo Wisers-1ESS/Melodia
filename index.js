@@ -17,7 +17,15 @@ const username = document.getElementById("username")
 const email = document.getElementById("email")
 const msgtxt = document.getElementById("msgtxt")
 
+const toggleMenu = () => {
+  menu = document.querySelector('.menuMobile');
+  menu?.classList.toggle("close")
+}
 
+const closeMenu = () => {
+  menu = document.querySelector('.menuMobile');
+  menu?.classList.add("close")
+}
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
