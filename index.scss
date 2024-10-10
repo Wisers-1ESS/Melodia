@@ -138,67 +138,110 @@ main {
     background-color: $background-color;
     width: 100%;
     min-height: 10rem;
+    
+    h1 {
+      color: #fff;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 3%;
+      font-family: "Merriweather", sans-serif;
   
-      .cards-section {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
-        width: 100%;
-        max-width: 1200px;
-        
+      // Responsividade 
+      @media (max-width: 1200px) {
+        font-size: 2.5rem;
       }
-      
-      .card {
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        transition: transform 0.3s, box-shadow 0.3s;
-        position: relative;
-        height: 200px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-      
-        h3 {
-          font-size: 1.5rem;
-          margin-bottom: 10px;
-        }
-      
-        p {
-          font-size: 1rem;
-          opacity: 0;
-          max-height: 0;
-          transition: opacity 0.3s, max-height 0.3s;
-          overflow: hidden;
-        }
-      
-        &:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-          
-          p {
-            opacity: 1;
-            max-height: 100px;
-          }
-        }
-      }
-      
-      .card:nth-child(1) { background-color: #F72585; }
-      .card:nth-child(2) { background-color: #B5179E; }
-      .card:nth-child(3) { background-color: #560BAD; }
-      .card:nth-child(4) { background-color: #3F37C9; }
-      .card:nth-child(5) { background-color: #4361EE; }
-      .card:nth-child(6) { background-color: #4CC9F0; }
-      
       @media (max-width: 768px) {
-        .cards-section {
-          grid-template-columns: 1fr;
+        font-size: 2rem;
+      }
+      @media (max-width: 480px) {
+        font-size: 1.8rem;
+      }
+    }
+  
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #c4c4c4;
+      padding-bottom: 2%;
+  
+      // Responsividade 
+      @media (max-width: 1200px) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 480px) {
+        font-size: 1.2rem;
+      }
+    }
+  
+    .cards-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      height: 200px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+  
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 1rem;
+        opacity: 0;
+        max-height: 0;
+        transition: opacity 0.3s, max-height 0.3s;
+        overflow: hidden;
+      }
+  
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  
+        p {
+          opacity: 1;
+          max-height: 100px;
+        }
+      }
+    }
+  
+    // Cor para cada card
+    .card:nth-child(1) { background-color: #F72585; }
+    .card:nth-child(2) { background-color: #B5179E; }
+    .card:nth-child(3) { background-color: #560BAD; }
+    .card:nth-child(4) { background-color: #3F37C9; }
+    .card:nth-child(5) { background-color: #4361EE; }
+    .card:nth-child(6) { background-color: #4CC9F0; }
+  
+    // telas menores
+    @media (max-width: 768px) {
+      .cards-section {
+        grid-template-columns: 1fr;
       }
     }
   }
+  
 }

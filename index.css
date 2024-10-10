@@ -125,6 +125,52 @@ main #sobre {
   width: 100%;
   min-height: 10rem;
 }
+main #sobre h1 {
+  color: #fff;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3%;
+  font-family: "Merriweather", sans-serif;
+}
+@media (max-width: 1200px) {
+  main #sobre h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  main #sobre h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  main #sobre h1 {
+    font-size: 1.8rem;
+  }
+}
+main #sobre h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c4c4c4;
+  padding-bottom: 2%;
+}
+@media (max-width: 1200px) {
+  main #sobre h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  main #sobre h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  main #sobre h2 {
+    font-size: 1.2rem;
+  }
+}
 main #sobre .cards-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -132,6 +178,7 @@ main #sobre .cards-section {
   padding: 20px;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 main #sobre .card {
   background-color: #fff;
