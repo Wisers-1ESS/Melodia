@@ -121,7 +121,7 @@ main #home img {
   }
 }
 main #sobre {
-  background-color: #3a0ca3;
+  background-color: #8b5bfc;
   width: 100%;
   min-height: 10rem;
 }
@@ -190,5 +190,15 @@ main #sobre .card:nth-child(6) {
     grid-template-columns: 1fr;
   }
 }
+
+footer{
+  background-color: #3a0ca3;
+  height: 150px;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+
+}
+
 
 /*# sourceMappingURL=index.css.map */
