@@ -22,7 +22,7 @@ $text-color: #333;
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: $background-color;
     line-height: 1.6;
     font-size: 16px;
 }
@@ -43,11 +43,6 @@ p {
 img {
     max-width: 100%;
     height: auto;
-}
-
-.testimonial-section {
-    background-color: $background-color;
-    padding: 4rem 0;
 }
 
 .section-title {
@@ -89,10 +84,6 @@ img {
 }
 
 @media (max-width: 768px) {
-    .testimonial-section {
-        padding: 2rem 1rem;
-    }
-
     .section-title {
         font-size: 2rem;
     }
