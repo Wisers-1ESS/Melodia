@@ -323,14 +323,13 @@ footer{
 
 }
 
-section {
+.depoimentos {
   margin-bottom: 40px;
   text-align: center;
 }
 
 
-
-section h2 {
+.depoimentos h2 {
   color: #fff;
   font-size: 35px;
   font-style: bold;
