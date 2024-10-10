@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimentos - Melodia</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3a0ca3;
+            border-radius: 10px;
+        }
+
+        :root {
+            --accent-color: #f72585;
+            --secondary-color: #b5179e;
+            --primary-color: #7209b7;
+            --background-color: #3a0ca3;
+            --text-color: #333;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        h1, h2, h3 {
+            font-family: "Merriweather", serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-family: "Poppins", sans-serif;
+            color: var(--text-color);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .depoimento-section {
+            background-color: var(--background-color);
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            color: var(--accent-color);
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+
+        .depoimento {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .depoimento:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .depoimento img {
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .depoimento h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 1rem;
+        }
+
+        .depoimento p {
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            .depoimento-section {
+                padding: 2rem 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .depoimento h3 {
+                font-size: 1.25rem;
+            }
+
+            .depoimento p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <section class="depoimento-section text-center">
+        <h2 class="section-title mb-4">O que nossos usuários estão dizendo</h2>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="depoimento p-4">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Souza" class="rounded-circle" width="100">
+                    <h3>Ana Souza, 23 anos</h3>
+                    <p>"Eu amo como o Melodia sempre me apresenta novos artistas incríveis! Minhas playlists estão sempre renovadas e com a melhor qualidade de som que já ouvi."</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="depoimento p-4">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João Pedro" class="rounded-circle" width="100">
+                    <h3>João Pedro, 27 anos</h3>
+                    <p>"Nunca foi tão fácil descobrir músicas novas! O Melodia é super intuitivo e me ajuda a criar playlists que refletem exatamente o meu gosto."</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="depoimento p-4">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Clara" class="rounded-circle" width="100">
+                    <h3>Maria Clara, 25 anos</h3>
+                    <p>"O design do app é limpo e fácil de usar. Além disso, a qualidade do som faz toda a diferença quando estou ouvindo minhas músicas preferidas."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+</html>
