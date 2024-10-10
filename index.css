@@ -292,11 +292,6 @@ main #sobre .card:nth-child(6) {
   border-radius: 10px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .section-title {
   color: #f72585;
   font-family: "Merriweather", serif;
@@ -426,7 +421,6 @@ footer {
   align-items: center;
 }
 
-.depoimentos {
 .depoimentos {
   margin-bottom: 40px;
   text-align: center;
