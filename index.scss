@@ -4,6 +4,7 @@ $accent-color: #f72585;
 $secondary-color: #b5179e;
 $primary-color: #7209b7;
 $background-color: #3a0ca3;
+$blue: #3f37c9;
 $text-color: #333;
 
 * {
@@ -48,6 +49,7 @@ header {
     p {
       color: $primary-color;
       font-size: 2rem;
+      margin-bottom: 0;
       font-family: "Raleway", sans-serif;
     }
   }
@@ -57,7 +59,7 @@ header {
       display: flex;
       gap: 2rem;
       list-style: none;
-
+      margin: 0;
       li {
         text-decoration: none;
 
@@ -97,7 +99,7 @@ header {
     .menuMobile {
       display: flex;
       position: absolute;
-      top: 4rem;
+      top: 70px;
       left: 0;
       background-color: #FFF;
       width: 100%;
@@ -261,6 +263,7 @@ main {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
+
     }
 
     .card {
@@ -348,18 +351,6 @@ main {
 }
 
 
-
-
-
-
-.section-title {
-  color: $accent-color;
-  font-family: 'Merriweather', serif;
-  font-size: 2.5rem;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  margin-bottom: 2rem;
-}
-
 .testimonial {
   background-color: #fff;
   border-radius: 10px;
@@ -421,8 +412,8 @@ footer {
   padding: 50px;
 }
 
-.box1 {
-  background-color: #4362ee6e;
+.box {
+  color: white;
   text-align: center;
   display: flex;
   align-items: center;
@@ -432,33 +423,20 @@ footer {
   padding: 50px;
   height: 40vh;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  &:nth-child(1){
+    background-color: $blue;
+  }
+
+  &:nth-child(2){
+    background-color: $background-color;
+  }
+
+  &:nth-child(3){
+    background-color: $primary-color;
+  }
 }
 
-.box2 {
-  background-color: #57a80c50;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 50px;
-  height: 40vh;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.box3 {
-  background-color: #f162a25e;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 50px;
-  height: 40vh;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
 
 .funcionalidades {
   display: flex;
@@ -541,7 +519,7 @@ h1 {
   margin-left: 20px;
 
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -579,6 +557,10 @@ h1 {
 
 .bold {
   font-size: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .bold:hover {
@@ -611,7 +593,7 @@ h1 {
 }
 
 
-.container {
+.containerContato {
   background-color: #fafafa;
   border-radius: 14px;
   margin: 14px 30px;
@@ -688,7 +670,7 @@ h1 {
 }
 
 .section-title {
-  color: #f72585;
+  color: $blue;
   font-family: 'Merriweather', serif;
   font-size: 2.5rem;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
