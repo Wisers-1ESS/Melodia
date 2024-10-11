@@ -4,7 +4,10 @@ $accent-color: #f72585;
 $secondary-color: #b5179e;
 $primary-color: #7209b7;
 $background-color: #3a0ca3;
+$foreground-color:#560BAD;
 $blue: #3f37c9;
+$blue2: #4361EE;
+$blue3: #4CC9F0;
 $text-color: #333;
 
 * {
@@ -307,27 +310,27 @@ main {
 
     // Cor para cada card
     .card:nth-child(1) {
-      background-color: #F72585;
+      background-color: $accent-color;
     }
 
     .card:nth-child(2) {
-      background-color: #B5179E;
+      background-color: $secondary-color;
     }
 
     .card:nth-child(3) {
-      background-color: #560BAD;
+      background-color: $foreground-color;
     }
 
     .card:nth-child(4) {
-      background-color: #3F37C9;
+      background-color: $blue;
     }
 
     .card:nth-child(5) {
-      background-color: #4361EE;
+      background-color: $blue2;
     }
 
     .card:nth-child(6) {
-      background-color: #4CC9F0;
+      background-color: $blue3;
     }
 
     // telas menores

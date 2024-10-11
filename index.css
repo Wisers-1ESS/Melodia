@@ -77,7 +77,7 @@ header.scrolled {
   header .menuMobile {
     display: flex;
     position: absolute;
-    top: 5rem;
+    top: 70px;
     left: 0;
     background-color: #FFF;
     width: 100%;
@@ -262,16 +262,16 @@ main #sobre .card:hover p {
   max-height: 100px;
 }
 main #sobre .card:nth-child(1) {
-  background-color: #F72585;
+  background-color: #f72585;
 }
 main #sobre .card:nth-child(2) {
-  background-color: #B5179E;
+  background-color: #b5179e;
 }
 main #sobre .card:nth-child(3) {
   background-color: #560BAD;
 }
 main #sobre .card:nth-child(4) {
-  background-color: #3F37C9;
+  background-color: #3f37c9;
 }
 main #sobre .card:nth-child(5) {
   background-color: #4361EE;
@@ -475,10 +475,6 @@ h1 {
 
 .bold {
   font-size: 20px;
-}
-
-.row{
-  max-width: 100%;
 }
 @media (max-width: 768px) {
   .bold {
