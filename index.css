@@ -13,7 +13,11 @@
   background-color: #3a0ca3;
   border-radius: 10px;
 }
-
+audio{
+  padding-top: 30px;
+  color: white;
+  align-items: center;
+}
 header {
   display: flex;
   position: sticky;
